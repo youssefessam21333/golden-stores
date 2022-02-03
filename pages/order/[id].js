@@ -216,7 +216,7 @@ function Order({ params }) {
                   Name: {shippingAddress.fullName}
                   <br/>
                   Address: {shippingAddress.address},{' '}
-                  {shippingAddress.city}, {shippingAddress.postalCode}{' '}
+                  {shippingAddress.city},
                   {shippingAddress.governorate}
                   </ListItem>
                   <ListItem>

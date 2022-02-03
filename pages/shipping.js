@@ -7,12 +7,12 @@ import {
 } from '@material-ui/core'
 import { useRouter } from 'next/router'
 import React, { useContext, useEffect } from 'react'
-import Layout from '../components/Layout.js'
+import Layout from '../components/Layout'
 import { Store } from '../utils/Store'
 import useStyles from '../utils/styles'
 import Cookies from 'js-cookie'
 import { Controller, useForm } from 'react-hook-form'
-import CheckoutWizard from '../components/CheckoutWizard.js'
+import CheckoutWizard from '../components/checkoutWizard'
 
 export default function Shipping() {
   const {handleSubmit, control, formState: {errors}, setValue} = useForm()
@@ -27,7 +27,7 @@ export default function Shipping() {
     setValue('address', shippingAddress.address)
     setValue('city', shippingAddress.city)
     setValue('governorate', shippingAddress.governorate)
-  }, [router, setValue, shippingAddress.address, shippingAddress.city, shippingAddress.fullName, shippingAddress.governorate, userInfo])
+  }, [router,])
   const classes = useStyles();
   const submitHandler = ({ fullName, address, city, governorate }) => {
     dispatch({ type: 'SAVE_SHIPPING_ADDRESS', payload: { fullName, address, city, governorate } });
