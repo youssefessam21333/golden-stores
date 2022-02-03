@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import NextLink from 'next/link'
 import Image from 'next/image'
-import Layout from '../../components/layout.js'
+import Layout from '../../components/Layout.js'
 import useStyles from '../../utils/styles'
 import { Grid, Link, List, ListItem, Typography, Card, Button } from '@material-ui/core'
 import db from '../../utils/db'

@@ -16,9 +16,9 @@ import {
   FormControlLabel,
   Checkbox,
 } from '@material-ui/core';
-import { getError } from '../../../utils/error';
+import { getError } from '../../../utils/onError.js';
 import { Store } from '../../../utils/Store';
-import Layout from '../../../components/Layout';
+import Layout from '../../../components/Layout.js';
 import useStyles from '../../../utils/styles';
 import { Controller, useForm } from 'react-hook-form';
 import { useSnackbar } from 'notistack';

@@ -24,8 +24,8 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import useStyles from '../utils/styles';
 import { useSnackbar } from 'notistack';
-import CheckoutWizard from '../components/CheckoutWizard';
-import { getError } from '../utils/error';
+import CheckoutWizard from '../components/CheckoutWizard.js';
+import { getError } from '../utils/onError.js';
 import Cookies from 'js-cookie';
 
 function PlaceOrder() {

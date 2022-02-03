@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Grid, Card, CardActionArea, CardMedia, CardContent, Typography, Button, CardActions } from '@material-ui/core'
-import Layout from '../components/Layout'
+import Layout from '../components/Layout.js'
 import NextLink from 'next/link'
 import db from '../utils/db'
 import Product from '../models/ProductModel'

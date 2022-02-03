@@ -4,7 +4,7 @@ import Product from '../../../models/ProductModel';
 import User from '../../../models/UserModel';
 import { isAuth, isAdmin } from '../../../utils/auth';
 import db from '../../../utils/db';
-import { onError } from '../../../utils/error';
+import { onError } from '../../../utils/onError.js';
 
 const handler = nc({
     onError,

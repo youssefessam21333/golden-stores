@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useReducer } from 'react';
 import dynamic from 'next/dynamic';
-import Layout from '../../components/Layout';
+import Layout from '../../components/Layout.js';
 import { Store } from '../../utils/Store';
 import NextLink from 'next/link';
 import Image from 'next/image';
@@ -24,7 +24,7 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import useStyles from '../../utils/styles';
 import { useSnackbar } from 'notistack';
-import { getError } from '../../utils/error';
+import { getError } from '../../utils/onError.js';
 import { PayPalButtons, usePayPalScriptReducer } from '@paypal/react-paypal-js'
 
 function reducer(state, action) {

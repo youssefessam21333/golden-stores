@@ -1,7 +1,7 @@
 import nc from 'next-connect'
 import Order from '../../../../models/OrderModel.js'
 import db from '../../../../utils/db.js'
-import onError from '../../../../utils/error.js'
+import onError from '../../../../utils/onError.js'
 import { isAuth } from '../../../../utils/auth.js'
 
 const handler = nc({
